@@ -1,0 +1,2 @@
+import{S as r}from"./index-fhkBm_-l.js";import"./index-EvByIPOY.js";import"./vendor-vue-Bt897R15.js";import"./vendor-primevue-CIbVuvmJ.js";const o="oitFinalSimpleBlendPixelShader",e=`precision highp float;uniform sampler2D uFrontColor;void main() {ivec2 fragCoord=ivec2(gl_FragCoord.xy);vec4 frontColor=texelFetch(uFrontColor,fragCoord,0);glFragColor=frontColor;}
+`;r.ShadersStore[o]||(r.ShadersStore[o]=e);const n={name:o,shader:e};export{n as oitFinalSimpleBlendPixelShader};

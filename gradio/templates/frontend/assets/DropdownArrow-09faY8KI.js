@@ -1,0 +1,1 @@
+import"./i18n-CF2eRi1J.js";import{a as t,f as s}from"./index-EvByIPOY.js";import"./ScrollFade.svelte_svelte_type_style_lang-BKhtzHKM.js";var a=s('<svg class="dropdown-arrow svelte-1mnuroq" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 18 18"><path d="M5 8l4 4 4-4z"></path></svg>');function g(o){var r=a();t(o,r)}export{g as D};
