@@ -200,6 +200,9 @@ importers:
       '@gradio/annotatedimage':
         specifier: workspace:^
         version: link:js/annotatedimage
+      '@gradio/appmaker':
+        specifier: workspace:^
+        version: link:js/appmaker
       '@gradio/audio':
         specifier: workspace:^
         version: link:js/audio
@@ -629,6 +632,31 @@ importers:
       vite:
         specifier: ^7.1.12
         version: 7.3.1(@types/node@24.10.9)(jiti@1.21.7)(lightningcss@1.31.0)(sass@1.97.2)(stylus@0.64.0)(sugarss@5.0.1(postcss@8.5.6))(terser@5.46.0)
+
+  js/appmaker:
+    dependencies:
+      '@gradio/atoms':
+        specifier: workspace:^
+        version: link:../atoms
+      '@gradio/client':
+        specifier: workspace:^
+        version: link:../../client/js
+      '@gradio/icons':
+        specifier: workspace:^
+        version: link:../icons
+      '@gradio/statustracker':
+        specifier: workspace:^
+        version: link:../statustracker
+      '@gradio/utils':
+        specifier: workspace:^
+        version: link:../utils
+      svelte:
+        specifier: ^5.48.0
+        version: 5.48.0
+    devDependencies:
+      '@gradio/preview':
+        specifier: workspace:^
+        version: link:../preview
 
   js/atoms:
     dependencies:

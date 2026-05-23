@@ -1,1 +1,0 @@
-import"./i18n-MiR6mDnu.js";import{a as t,f as p}from"./index-ZCI6Jh3f.js";import"./ScrollFade.svelte_svelte_type_style_lang-BM8hQ0l6.js";var s=p('<svg class="dropdown-arrow svelte-dw5fp6" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 18 18"><path d="M5 8l4 4 4-4z"></path></svg>');function d(o){var r=s();t(o,r)}export{d as D};

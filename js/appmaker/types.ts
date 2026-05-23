@@ -22,9 +22,7 @@ export interface AppMakerProps {
 	value: string;
 	components: Record<string, ComponentDef>;
 	title: string;
-	show_label: boolean;
 	min_height: number | undefined;
-	props: Record<string, any>;
 }
 
 export interface AppMakerEvents {

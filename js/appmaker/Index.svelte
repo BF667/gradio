@@ -12,13 +12,8 @@
 	let props = $props();
 	const gradio = new Gradio<AppMakerEvents, AppMakerProps>(props);
 
-	let _props = $derived({
-		value: gradio.props.value ?? "",
-		components: gradio.props.components ?? {},
-		title: gradio.props.title ?? "App Maker",
-		visible: gradio.shared.visible,
-		...gradio.props.props
-	});
+	let components = $derived(gradio.props.components ?? {});
+	let title = $derived(gradio.props.title ?? "App Maker");
 
 	let old_value = $state(gradio.props.value);
 	$effect(() => {
@@ -46,7 +41,7 @@
 		<BlockLabel
 			Icon={undefined}
 			show_label={gradio.shared.show_label}
-			label={gradio.shared.label || _props.title}
+			label={gradio.shared.label || title}
 			float={true}
 		/>
 	{/if}
@@ -61,8 +56,8 @@
 	/>
 
 	<AppMaker
-		components={_props.components}
-		title={_props.title}
+		{components}
+		{title}
 		on_generate={handle_generate}
 	/>
 </Block>

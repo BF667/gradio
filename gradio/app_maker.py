@@ -118,7 +118,8 @@ def app_maker(options: dict[str, Any] | None = None) -> Blocks:
             return _generate_code(schema)
 
         # The Svelte component fires "generate" event with the schema JSON
-        maker.generate(on_generate, outputs=[output_code])
+        # inputs=[maker] so the component's value (schema JSON) is passed to the callback
+        maker.generate(on_generate, inputs=[maker], outputs=[output_code])
 
         # The button also triggers code generation from current state
         def on_generate_btn_click(schema_json: str) -> str:
