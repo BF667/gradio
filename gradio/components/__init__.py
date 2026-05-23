@@ -1,4 +1,5 @@
 from gradio.components.annotated_image import AnnotatedImage
+from gradio.components.appmaker import AppMaker
 from gradio.components.audio import Audio
 from gradio.components.base import (
     Component,
@@ -63,6 +64,7 @@ Checkboxgroup = CheckboxGroup
 Json = JSON
 
 __all__ = [
+    "AppMaker",
     "Audio",
     "BarPlot",
     "Button",

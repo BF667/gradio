@@ -1,0 +1,1 @@
+import"./i18n-MiR6mDnu.js";import{a7 as p,t as m,a as o,a0 as r,a8 as s}from"./index-ZCI6Jh3f.js";import"./vendor-vue-Bt897R15.js";import"./vendor-primevue-CIbVuvmJ.js";function n(a,e){s();var t=p();m(()=>r(t,e.value||"")),o(a,t)}export{n as default};

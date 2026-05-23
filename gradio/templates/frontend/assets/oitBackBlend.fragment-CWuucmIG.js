@@ -1,2 +1,0 @@
-import{S as r}from"./index-fhkBm_-l.js";import"./index-EvByIPOY.js";import"./vendor-vue-Bt897R15.js";import"./vendor-primevue-CIbVuvmJ.js";const o="oitBackBlendPixelShader",e=`precision highp float;uniform sampler2D uBackColor;void main() {glFragColor=texelFetch(uBackColor,ivec2(gl_FragCoord.xy),0);if (glFragColor.a==0.0) { 
-discard;}}`;r.ShadersStore[o]||(r.ShadersStore[o]=e);const d={name:o,shader:e};export{d as oitBackBlendPixelShader};
