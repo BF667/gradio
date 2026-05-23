@@ -122,6 +122,7 @@ from gradio.oauth import OAuthProfile, OAuthToken
 from gradio.renderable import render
 from gradio.route_utils import Header
 from gradio.routes import Request, mount_gradio_app
+from gradio.app_maker import app_maker
 from gradio.server import Server
 from gradio.templates import (
     Files,
@@ -147,6 +148,7 @@ __all__ = [
     "AnnotatedImage",
     "Server",
     "Annotatedimage",
+    "app_maker",
     "Audio",
     "BarPlot",
     "Blocks",
