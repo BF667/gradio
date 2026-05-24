@@ -13,7 +13,8 @@
 	const gradio = new Gradio<AppMakerEvents, AppMakerProps>(props);
 
 	let components = $derived(gradio.props.components ?? {});
-	let title = $derived(gradio.props.title ?? "App Maker");
+	let title = $derived(gradio.props.title ?? "Gradio Sketch");
+	let dark_mode = $derived(gradio.props.dark_mode ?? true);
 
 	let old_value = $state(gradio.props.value);
 	$effect(() => {
@@ -58,6 +59,7 @@
 	<AppMaker
 		{components}
 		{title}
+		{dark_mode}
 		on_generate={handle_generate}
 	/>
 </Block>
